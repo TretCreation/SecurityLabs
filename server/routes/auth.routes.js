@@ -9,7 +9,7 @@ const config = require("config")
 router.post("/registration", 
 	[
 		check("email", "Uncorrect email").isEmail(),
-		check("password", "Password must be longer that 4 and shorter than 8").isLength({min:4, max:8})
+		check("password", "Password must be longer that 6 and shorter than 20").isLength({min:6, max:20})
 	],
 	async (req, res) => {
 	try {
