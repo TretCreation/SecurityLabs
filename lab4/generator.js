@@ -56,4 +56,8 @@ const generatePasswords = () => {
 	return passwords;
 }
 
-generatePasswords();
+// generatePasswords();
+
+module.exports = {
+	generatePasswords
+}
