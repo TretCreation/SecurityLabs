@@ -83,7 +83,6 @@ async function generatePasswords () {
 	console.log(passwordsArgon2)
 	// return passwords;
 }
-hashArgon2.csv
 generatePasswords();
 
 // module.exports = {
