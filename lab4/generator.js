@@ -45,32 +45,32 @@ async function generatePasswords () {
 		password = top100Pas[randomInteger(0, top100Pas.length - 1)]
 		hashMD5 = crypto.createHash('md5').update(password).digest('hex');
 		hashArgon2 = await argon2.hash(password, {type: argon2.argon2d});
-		passwordsMD5.push(hashArgon2);
-		passwordsArgon2.push(hashMD5);
+		passwordsMD5.push(hashMD5);
+		passwordsArgon2.push(hashArgon2);
 		// passwords.push(password);
 	}
 	for (let i=0; i < percent2; i++) {
 		password = top100kPas[randomInteger(0, top100kPas.length - 1)]
 		hashMD5 = crypto.createHash('md5').update(password).digest('hex');
 		hashArgon2 = await argon2.hash(password, {type: argon2.argon2d});
-		passwordsMD5.push(hashArgon2);
-		passwordsArgon2.push(hashMD5);
+		passwordsMD5.push(hashMD5);
+		passwordsArgon2.push(hashArgon2);
 		// passwords.push(password);
 	}
 	for (let i=0; i < percent3; i++) {
 		password = commonWords[randomInteger(0, commonWords.length - 1)] + stongGeneratePassword(4);
 		hashMD5 = crypto.createHash('md5').update(password).digest('hex');
 		hashArgon2 = await argon2.hash(password, {type: argon2.argon2d});
-		passwordsMD5.push(hashArgon2);
-		passwordsArgon2.push(hashMD5);
+		passwordsMD5.push(hashMD5);
+		passwordsArgon2.push(hashArgon2);
 		// passwords.push(password);
 	}
 	for (let i=0; i < ost; i++) {
 		password = stongGeneratePassword(10);
 		hashMD5 = crypto.createHash('md5').update(password).digest('hex');
 		hashArgon2 = await argon2.hash(password, {type: argon2.argon2d});
-		passwordsMD5.push(hashArgon2);
-		passwordsArgon2.push(hashMD5);
+		passwordsMD5.push(hashMD5);
+		passwordsArgon2.push(hashArgon2);
 		// passwords.push(password);
 	}
 
@@ -83,7 +83,7 @@ async function generatePasswords () {
 	console.log(passwordsArgon2)
 	// return passwords;
 }
-
+hashArgon2.csv
 generatePasswords();
 
 // module.exports = {
