@@ -1,0 +1,19 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "go": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "moments": "^0.0.2",
+    "node-fetch": "^3.1.1",
+    "random-js": "^2.1.0"
+  }
+}
